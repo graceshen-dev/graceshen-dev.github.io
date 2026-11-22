@@ -25,15 +25,15 @@ function showFact() {
   }, 200);
 }
 
-document.getElementById("nextFact").addEventListener("click", () => {
+function nextFactFunction() {
   current = (current + 1) % facts.length;
   showFact();
-});
+};
 
-document.getElementById("prevFact").addEventListener("click", () => {
+function previousFactFunction() {
   current = (current - 1 + facts.length) % facts.length;
   showFact();
-});
+};
 
 showFact(); 
 
