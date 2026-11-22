@@ -15,6 +15,8 @@ let current = 0; // which fact is showing
 
 const factText = document.getElementById("factText");
 const factCount = document.getElementById("factCount");
+const nextBtn = document.getElementById("nextFact");
+const prevBtn = document.getElementById("prevFact");
 
 function showFact() {
   factText.style.opacity = 0;          // fade out...
@@ -25,15 +27,15 @@ function showFact() {
   }, 200);
 }
 
-function nextFactFunction() {
-  current = (current + 1) % facts.length;
-  showFact();
-};
+  nextBtn.addEventListener("click", function () {
+    current = (current + 1) % facts.length;
+    showFact();
+  });
 
-function previousFactFunction() {
-  current = (current - 1 + facts.length) % facts.length;
-  showFact();
-};
+  prevBtn.addEventListener("click", function () {
+    current = (current - 1 + facts.length) % facts.length;
+    showFact();
+  });
 
 showFact(); 
 
