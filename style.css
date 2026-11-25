@@ -369,6 +369,8 @@ section { scroll-margin-top: 70px; }
 .photo-strip img {
   flex: 0 0 auto;
   width: 260px;
+  height: 340px;
+  object-fit: cover;
   border-radius: 1rem;
   scroll-snap-align: center;
 }
