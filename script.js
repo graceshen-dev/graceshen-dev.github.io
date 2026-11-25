@@ -4,11 +4,11 @@
 
 // ---------- Fun fact "carousel" ----------
 const facts = [
-  "I can name any Conan Gray song if you play the first second",
-  "My go-to café order is fruit tea.",
-  "I can name 80 digits of pi on a good day",
+  "I have been to over 10 concerts!",
+  "I was born in Calgary",
+  "I can name 80 digits of pi (on a good day)",
   "I can recite the alphabet backwards",
-  "My hidden talent is mickey mouse voice"
+  "I can type at over 140WPM!"
 ];
 
 let current = 0; // which fact is showing 
